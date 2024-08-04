@@ -3,3 +3,4 @@
 *.pyc
 .coverage
 *.egg-info/
+featurize_assignment_ans.py
