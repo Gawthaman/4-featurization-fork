@@ -1,4 +1,7 @@
-# Assigment 4: Finding Materials with High Hardness
+# Assignment 4: Finding Materials with High Hardness
+
+![Tests](../../actions/workflows/tests.yml/badge.svg)
+![Docker Build](../../actions/workflows/docker-image.yml/badge.svg)
 
 Perform Bayesian optimization with featurization and a contextual variable to
 maximize hardness as a function of material composition.

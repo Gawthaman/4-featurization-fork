@@ -26,17 +26,30 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.flake8",
+				"ms-python.isort",
 				"GitHub.vscode-github-actions",
 				"GitHub.copilot",
 				"GitHub.copilot-chat"
-			]
+			],
+			"settings": {
+				"python.formatting.provider": "black",
+				"python.linting.enabled": true,
+				"python.linting.flake8Enabled": true,
+				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.organizeImports": true
+				}
+			}
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"onCreateCommand": "sudo cp .devcontainer/welcome.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt",
-	"postCreateCommand": "sudo -H pip3 install -r requirements.txt" // alternatively, `pip3 install --user -r requirements.txt`
+	"postCreateCommand": "sudo -H pip3 install -r requirements.txt",
+	"postStartCommand": "python -m pip install --upgrade pip"
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode",
 	// "features": {

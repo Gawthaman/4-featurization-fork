@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "name": "1. Data Featurization",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest featurize_assignment_test.py::test_task_a -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "2. Optimization Loop",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest featurize_assignment_test.py::test_task_c -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "3. Optimal Solution",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest featurize_assignment_test.py::test_task_d -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "4. Feature Importance",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest featurize_assignment_test.py::test_task_e -v",
+      "points": 2,
+      "timeout": 10
+    },
+    {
+      "name": "5. Material Analysis",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest featurize_assignment_test.py::test_task_f -v",
+      "points": 2,
+      "timeout": 10
+    }
+  ]
+}
